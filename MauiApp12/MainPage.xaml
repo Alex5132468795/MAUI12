@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp12.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center">
+            <HorizontalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+                <RadioButton GroupName="Oper" Value="300" CheckedChanged="RadioButton_CheckedChanged">
+                    <RadioButton.Content>
+                        <VerticalStackLayout BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="400">
+                            <Image Source="C:\Users\user\Desktop\MauiApp12\MauiApp12\Resources\Images\oper.png"></Image>
+                            <Label Text="Красный 300$"></Label>
+                        </VerticalStackLayout>
+
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton GroupName="Oper" Value="400" CheckedChanged="RadioButton_CheckedChanged">
+                    <RadioButton.Content>
+                        <VerticalStackLayout BackgroundColor="LightGray" WidthRequest="200" HeightRequest="400">
+                            <Image Source="C:\Users\user\Desktop\MauiApp12\MauiApp12\Resources\Images\oper.png"></Image>
+                            <Label Text="Белый 400$"></Label>
+                        </VerticalStackLayout>
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton GroupName="Oper" Value="500" CheckedChanged="RadioButton_CheckedChanged">
+                    <RadioButton.Content>
+                        <VerticalStackLayout BackgroundColor="LightSkyBlue" WidthRequest="200" HeightRequest="400">
+                            <Image Source="C:\Users\user\Desktop\MauiApp12\MauiApp12\Resources\Images\oper.png"></Image>
+                            <Label Text="Синий 500$"></Label>
+                        </VerticalStackLayout>
+                    </RadioButton.Content>
+                </RadioButton>
+            </HorizontalStackLayout>
+            <VerticalStackLayout HorizontalOptions="Center">
+                <HorizontalStackLayout>
+                    <RadioButton GroupName="Lo" Content="LOREM 600$" Value="600" CheckedChanged="RadioButton_CheckedChanged_1"></RadioButton>
+                    <RadioButton GroupName="Lo" Content="LOREM 700$" Value="700" CheckedChanged="RadioButton_CheckedChanged_1"></RadioButton>
+                    <RadioButton GroupName="Lo" Content="LOREM 800$" Value="800"  CheckedChanged="RadioButton_CheckedChanged_1"></RadioButton>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <RadioButton GroupName="Lo" Content="LOREM 900$" Value="900" CheckedChanged="RadioButton_CheckedChanged_1"></RadioButton>
+                    <RadioButton GroupName="Lo" Content="LOREM 1000$" Value="1000" CheckedChanged="RadioButton_CheckedChanged_1"></RadioButton>
+                    <RadioButton GroupName="Lo" Content="LOREM 900$" Value="1100" CheckedChanged="RadioButton_CheckedChanged_1"></RadioButton>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <HorizontalStackLayout  HorizontalOptions="Center">
+                <Label Text="Total cost"></Label>
+                <Label x:Name="Cost" Text=""></Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
